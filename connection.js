@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 
 const uri = 'mongodb+srv://devouichen:devouichen@myfirstcluster.d4ndcdg.mongodb.net/'; // L'URI de connexion à votre base de données MongoDB
 const dbName = 'forex'; // Le nom de votre base de données
-
+// ok
 const client = new MongoClient(uri);
 module.exports = async function connectDatabase() {
   try {
