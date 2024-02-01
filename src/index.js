@@ -1,7 +1,7 @@
 const express = require('express');
 var cors = require('cors');
 const app = express();
-const fetchDataRoute = require('./src/fechData');
+const fetchDataRoute = require('./fechData');
 
 app.use('/fetchData', fetchDataRoute);
 
