@@ -100,7 +100,7 @@ async function listMajors(auth) {
 
 router.get('/getio', async (req, res) => {
     try {
-        authorize().then(listMajors).catch(console.error);
+        authorize().then(listMajors).then(res.status(200).send('OK')).catch(console.error);
     } catch (err) {
         res.status(400).send(err)
     }
